@@ -1,0 +1,58 @@
+body
+{
+  margin:0;
+  padding: 0;
+}
+
+/* para sa video background*/
+#vid
+{
+  position:fixed;
+  overflow: auto;
+  z-index:-100;
+
+}
+@media (min-aspect-ratio: 16/9)
+{
+  #vid{
+   width: 100%;
+   height: auto; 
+  }
+}
+@media (max-aspect-ratio: 16/9)
+{
+  #vid{
+   width: auto;
+   height: 100%; 
+  }
+}
+  .nav-link{
+    font-size: 14px;
+  }
+  .time_date {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+  #drp{
+    margin: 0;padding: 0;border-radius: .4em;background: white;}
+  .m-header{
+  background: black;margin: 0px;color: white;padding: 5px;font-size: 20px; text-align: left; height: 45px; }
+#messages-container{
+height: 300px;width:500px;overflow: auto;margin-bottom: 50px; background:white;border-radius: .4em}
+.textarea{
+width: 87%;height:10%;border-radius: .4em;position: absolute;bottom:1%;margin:0px auto;}
+.grey-message, .white-message{
+  width: 96%;padding: 5px;margin:0px auto;margin-top: 2px;}
+.grey-message{
+background:white;float: right;color: white;}
+.white-message{
+float:right;color: black;margin-right: 20px;}
+#grey-message,#white-message{
+border:1px solid black;width: 60%;padding: 5px;margin:0px auto;margin-top: 2px;overflow: auto;}
+#grey-message{
+  position: relative;background:#000000;border-radius: .4em;text-align: right;   float: right;color: white;}
+#white-message{
+position: relative;background:#000000;border-radius: .4em;float:left;color: white;
+}
